@@ -1,0 +1,94 @@
+<html>
+  <head>  
+    <link href = 'cooladmin.css' rel='stylesheet'type="text/css" >
+  </head>
+  <body>
+    <div id = "top">
+      <div  id = "cooladmin" >
+      <!--左上角-->
+        <img src = 'logo\logo.png'>
+      </div>
+      
+      <div id = 'searchpart'>
+       <!--搜尋框 訊息 提醒 用戶-->
+        <div id = 'search'>
+          <input type = 'search' class = 'searchbar' value = 'Search for data & reports...'>
+          <img src = 'searchpart\search_icon.png' width="64" height="45">
+        </div>
+        <div id = 'Messages'>
+          <p><img src = 'searchpart\Message_icon.png'></p>
+          <p><img src = 'searchpart\email_icon.png'></p>
+          <p><img src = 'searchpart\bell_icon.png'></p>
+          <p><img src = 'searchpart\men_icon.png' width='90%' height="70%"></p>
+          <p style='font-size: 20px;'>John Doe</p>
+        </div>
+      </div>
+    </div>
+    <div id = "bottom">
+      <div id = "sidebar">
+      <!--左邊SideBar-->
+        <div class="icon"><p style='padding-right: 10px;'><img src='Dashboard\Dashboard_icon.png'></p><p>Dashboard</p></div>
+        <div class="icon"><p style='padding-right: 10px;'><img src='Dashboard\Chart_icon.png'></p><p>Charts</p></div>
+        <div class="icon"><p style='padding-right: 10px;'><img src='Dashboard\Tables_icon.png'></p><p>Tables</p></div>
+        <div class="icon"><p style='padding-right: 10px;'><img src='Dashboard\Forms_icon.png'></p><p>Forms</p></div>
+        <div class="icon"><p style='padding-right: 10px;'><img src='Dashboard\Calendar_icon.png'></p><p>Calendar</p></div>
+        <div class="icon"><p style='padding-right: 10px;'><img src='Dashboard\Maps_icon.png'></p><p>Maps</p></div>
+        <div class="icon"><p style='padding-right: 10px;'><img src='Dashboard\Pages_icon.png'></p><p>Pages</p></div>
+        <div class="icon"><p style='padding-right: 10px;'><img src='Dashboard\UI_Elements_icon.png'></p><p>UI Elements</p></div>
+      </div>
+      
+      <div id = 'main'>
+        <!--右下主要部分-->
+        <div id = 'overview_header'>
+          <p>Overview</p><p><input type = 'button' value="+ADD ITEM" class = 'btn'></p>
+        </div>
+        <div id = 'overview'>
+          <p><img style="width: 250px ;height: 260px;" src='main\1.png'></p>
+          <p><img style="width: 250px ;height: 260px;" src='main\2.png'></p>
+          <p><img style="width: 250px ;height: 220px;" src='main\3.png'></p>
+          <p><img style="width: 250px ;height: 260px;" src='main\4.png'></p>
+        </div>
+        <div id = 'recentreports'>
+          <div class = 'recentreports_p1'>
+            <p style="font-size: 24;">Recent Reports</p>
+            <div style='display: flex;flex-direction: row;'>
+              <p class = 'bcircle'></p>
+              <p style="padding-left: 10;padding-right: 10;">Products</p>
+              <p class = 'gcircle'bac></p>
+              <p style="padding-left: 10;padding-right: 10;">Services</p>
+            </div>
+            <img style='width: 220px;width: 454px;'src='main\RecentReports.png'>
+          </div>
+          <div class = 'recentreports_p2'>
+            <div>
+              <p style="font-size: 24;">Char By %</p>
+              <div style="display: flex;flex-direction: row;">
+                <p class = 'bcircle'></p>
+                <p style="padding-left: 10;padding-right: 10;">Products</p>
+              </div>
+              <div style = 'display: flex;flex-direction: row;'>
+                <p class = 'rcircle'></p>
+                <p style="padding-left: 10;padding-right: 10;">Services</p>
+              </div>
+            </div>  
+            <p style="display: flex;align-items: flex-end;"><img style='width: 200px;height: 200px;'src='main\CharBy.png'></p>
+          </div>
+        </div>  
+        <div id ='earningsbyitems_header'>
+          <p>Earnings By items</p>
+
+          <p>Top Countries</p>
+        </div>
+        <div id = 'earningsbyitems'>
+          <p><img style = 'width: 790px;height:500px'src='main\EarningsByItems.png'></p>
+          <p><img style = 'height: 500px;'src='main\TopCountries.png'></p>
+          
+        </div>
+        <div id = 'calendar'>
+          <p><img style = 'width: 530px;height: auto;'src='main\Task.png'></p>
+          <p><img style = 'width: 530px;height: auto;'src='main\NewMessages.png'></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
