@@ -1,0 +1,167 @@
+<html>
+  <head>  
+    <script src="https://kit.fontawesome.com/be6e392d07.js" crossorigin="anonymous"></script>
+    <!--套用fontawesome的icon-->
+    <link href = 'cooladmin.css' rel='stylesheet'type="text/css" >
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!--使用poppins字體-->
+  </head>
+  <body>
+    <div id = "top">
+      <div  id = "cooladmin" >
+      <!--左上角-->
+        <img src = 'logo\logo.png'>
+      </div>
+      
+      <div id = 'searchpart'>
+       <!--搜尋框 訊息 提醒 用戶-->
+        <div id = 'search'>
+          <input type = 'search' class = 'searchbar' value = 'Search for data & reports...'>
+          <img src = 'searchpart\search_icon.png' width="64" height="45">
+        </div>
+        <div id = 'searchpart__right'>
+          <div id = 'Messages'>
+            <i class="fas fa-comment-dots"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-bell"></i>
+          </div>
+          <div id = 'john'>
+            <p><img src = 'searchpart\men_icon.png' width='80%' height="60%"></p>
+            <p class = 'john__doe'>John Doe</p>
+            <p><i class="fas fa-angle-down"></i><p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id = "bottom">
+      <div id = "sidebar">
+      <!--左邊SideBar-->
+        <div class="icon">
+          <img src='Dashboard\Dashboard_icon.png'>
+          <p>Dashboard</p>
+        </div>
+        <div class="icon">
+          <img src='Dashboard\Chart_icon.png'>
+          <p>Charts</p>
+        </div>
+        <div class="icon">
+          <img src='Dashboard\Tables_icon.png'>
+          <p>Tables</p>
+        </div>
+        <div class="icon">
+          <img src='Dashboard\Forms_icon.png'>
+          <p>Forms</p>
+        </div>
+        <div class="icon">
+          <img src='Dashboard\Calendar_icon.png'>
+          <p>Calendar</p>
+        </div>
+        <div class="icon">
+          <img src='Dashboard\Maps_icon.png'>
+          <p>Maps</p>
+        </div>
+        <div class="icon">
+          <img src='Dashboard\Pages_icon.png'>
+          <p>Pages</p>
+        </div>
+        <div class="icon">
+          <img src='Dashboard\UI_Elements_icon.png'>
+          <p>UI Elements</p>
+        </div>
+      </div>
+      
+      <div id = 'main'>
+        <!--右下主要部分-->
+        <div id = 'overview_header'>
+          <p style="margin:0">Overview</p><p><input type = 'button' value="+ADD ITEM" class = 'btn'></p>
+        </div>
+        <div id = 'overview'>
+          <div class = "overview_body one">
+            <i class="far fa-user"></i>
+            <p class = 'number'>10368</p>
+            <p class = 'description'>members online</p>
+            <img src = 'main/MembersOnline.png'>
+          </div>
+          <div class = "overview_body two">
+            <i class="fas fa-shopping-cart"></i>
+            <p class = 'number'>388,688</p>
+            <p class = 'description'>items solid</p>
+            <img src = 'main/ItemsSolid.png'>
+          </div>
+          <div class = "overview_body three">
+            <i class="far fa-calendar-minus"></i>
+            <p class = 'number'>1,086</p>
+            <p class = 'description'>this week</p>
+            <img src = 'main/ThisWeek.png'>
+          </div>
+          <div class = "overview_body four">
+            <i class="fas fa-dollar-sign"></i>
+            <p class = 'number'>1,060,386</p>
+            <p class = 'description'>total earnings</p>
+            <img src = 'main/TotalEarnings.png'>
+          </div>
+        </div>
+        <div id = 'recentreports'>
+          <div class = 'recentreports_p1'>
+              <p class = 'title'>Recent Reports</p>
+              <div class="display">
+                <div class="display left">
+                  <p class = 'bcircle'></p>
+                  <p style="padding-left: 10;padding-right: 10;">Products</p>
+                  <p class = 'gcircle'bac></p>
+                  <p style="padding-left: 10;padding-right: 10;">Services</p>
+                </div>
+                <div class="display right">
+                  <div>
+                    <p class="pnumber">
+                      <span style="color:green;">↑</span>25%
+                    </p>
+                    <p>
+                      Products
+                    </p>
+                  </div>
+                  <div>
+                    <p class="pnumber">
+                      <span style="color:red">↓</span>10%
+                    </p>
+                    <p>
+                      Services
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <img class = "p1" src='main\RecentReports.png'>
+          </div>
+          <div class = 'recentreports_p2'>
+            <div>
+              <p class = 'title' >Char By %</p>
+              <div style="display: flex;flex-direction: row; margin-bottom: 10px;">
+                <p class = 'bcircle'></p>
+                <p style="padding-left: 10;padding-right: 10;">Products</p>
+              </div>
+              <div style = 'display: flex;flex-direction: row;'>
+                <p class = 'rcircle'></p>
+                <p style="padding-left: 10;padding-right: 10;">Services</p>
+              </div>
+            </div>  
+            <p style="display: flex;align-items: flex-end;"><img style='width: 200px;height: 200px;'src='main\CharBy.png'></p>
+          </div>
+        </div>  
+        <div id ='earningsbyitems_header'>
+          <p>Earnings By items</p>
+
+          <p>Top Countries</p>
+        </div>
+        <div id = 'earningsbyitems'>
+          <p><img style = 'width: 790px;height:500px'src='main\EarningsByItems.png'></p>
+          <p><img style = 'height: 500px;'src='main\TopCountries.png'></p>
+          
+        </div>
+        <div id = 'calendar'>
+          <p><img style = 'width: 530px;height: auto;'src='main\Task.png'></p>
+          <p><img style = 'width: 530px;height: auto;'src='main\NewMessages.png'></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
