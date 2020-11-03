@@ -48,14 +48,19 @@ table {
 }
 
 /*以上是消除瀏覽器差異*/
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: sans-serif,"poppins";
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'poppins';
 }
+
 /*當你設定一個元素樣式為 box-sizing: border-box;，這個元素的內距和邊框將不會增加元素本身的寬度。*/
 html{
   height: 100%;
@@ -66,18 +71,21 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  height: 100%;
 }
 #top {
   width: 100%;
+  height: 10%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
+  
 }
 /*左上*/
 #cooladmin { 
   flex-shrink: 0;
-  height: 80px;
+  height: 100%;
   width: 19.5%;     
   background-color:#F5F5F5;
   padding-left: 35px ;
@@ -92,7 +100,7 @@ body {
 /*右上*/
 #searchpart{
   flex-shrink: 0;
-  height: 80px;
+  height: 100%;
   width: 80.5%;
   background-color:#F5F5F5 ;
   display: flex;
@@ -134,15 +142,32 @@ body {
   justify-content: space-between;
   
 }
-#Messages > i{
+.messages_icon{
   font-size: 25px;
-  color:#adadad
+  color:#adadad;
+  position: relative;
+}
+.messages_number {
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top:-6px;
+  right: -6px;
+  font-size: 5px;
+  font-weight: 100;
+  font-family: 'poppins';
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .john__doe{
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 8px;
   font-weight: 500;
-  font-family: sans-serif;
+  font-family: "Poppins";
   text-decoration-style: solid;
   cursor: pointer;
   
@@ -156,15 +181,15 @@ body {
   text-transform: capitalize;
   font-weight: 500;
 }
-#bottom{
-  
+#bottom {
+  width: 100%;
   height: 100%;
-  overflow:hidden;
+  overflow-x:hidden;
   display: flex;
   flex-direction: row;
 }
 /*左下*/
-#sidebar{
+#sidebar {
   flex-shrink: 0;
   top: 40%;
   width: 19.5%;
@@ -176,6 +201,7 @@ body {
   padding-top: 25px;
   padding-left: 35px;
   box-sizing: border-box;
+  font-family: Arial;
 }
 .icon{
   color: #666;
@@ -197,17 +223,18 @@ body {
 #main{
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 50px;
-  width: 80.5%;
   height: 100%;
+  width: 80.5%;
   background-color: #dddddd;
   overflow-y: auto;
-
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  
 }
 
 #overview_header{ 
+  padding-top: 50px;
   width: 100%;
   font-weight: 400;
   font-size: 30px;
@@ -229,7 +256,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  font-family :"Times New Roman"
 }
 .overview_body > img {
   width: 200px;
@@ -241,10 +267,12 @@ body {
   font-size: 36px;
   line-height: 1;
   margin-bottom: 5px;
+  font-family :"Poppins Light"
 }
 .overview_body > .description {
   font-size: 18px;
   color: rgba(255,255,255,.6);
+  font-family :"Poppins Light"
 }
 
 .overview_body > i {
@@ -281,7 +309,7 @@ body {
 #overview{
   flex: 1 1 25%;
   width: 100%;
-  height: auto;
+  
   display: flex;
   align-items: flex-start;
   flex-direction: row;
@@ -289,19 +317,20 @@ body {
 }
 
 #recentreports{
-  height: auto;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .recentreports_p1{
   height:457;
-  width:529.6;
+  flex:1 1 50%;
   background-color: rgb(255, 255, 255);
   background-origin: padding-box;
   padding-left: 40;
   padding-bottom: 65;
   padding-right: 35;
+
   
   box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
   box-sizing: border-box;
@@ -310,6 +339,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 10px;
 }
 .recentreports_p1 > .title {
@@ -346,13 +376,14 @@ body {
 }
 .recentreports_p2{
   height:457;
-  width:529.6;
+  flex:1 1 50%;
   background-color: rgb(255, 255, 255);
   background-origin: padding-box;
-
+  margin-left: 20px;
   padding-left: 40;
   padding-bottom: 65;
   padding-right: 35;
+  
   
   box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
   box-sizing: border-box;
@@ -361,6 +392,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
+  margin-bottom: 50px;
   border-radius: 10px;
 }
 
@@ -396,17 +428,256 @@ body {
   justify-content: space-between;
   font-size: 30px;
   font-weight: 400;
+  font-family: 'Times New Roman';
+  margin-bottom: 30px;
+  
 }
-#earningsbyitems{
-  height: auto;
+#final_part {
+  
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-#calendar{
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content:space-between ;
+  margin-bottom: 25px;
 }
 
+#final_part_left {
+  flex: 1 1 75%;
+  margin-right: 30;
+  margin-bottom: 30;
+  overflow-x: auto;
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px ;
+}
+
+#earningsbyitems {
+  display: table;
+  border-spacing:2px ;
+  border-color: grey;
+  
+  
+  border-collapse: separate;
+  border-spacing: 0;
+  
+  
+}
+#earningsbyitems tr:nth-child(odd){
+  background-color: #f0f0f0
+}
+#earningsbyitems tr:nth-child(even){
+  background-color: white;
+}
+
+.earningsbyitems_title > td {
+  background-color: black;
+  color:white;
+  padding: 22 40;
+  font-size: 20;
+  font-family: 'poppins';
+  white-space:nowrap;
+}
+
+
+.earningsbyitems_body > td {
+  color: #808080;
+  padding: 12 40;
+  white-space:nowrap;
+  font-family: 'poppins';
+}
+
+
+
+
+
+#final_part_right {
+  flex:1 1 25%;
+  height: 400;
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient(90deg, #396afc 0%, #2948ff 100%);
+  padding: 25 40;
+  padding-bottom: 29;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.final_part_right_inside {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.topcountries_body > td{
+  color: white;
+  padding: 14 5;
+  border-bottom-color:rgba(255.255.255.0.2) ;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-family: 'poppins';
+  font-size: 14px;
+  white-space:nowrap;
+}
+.topcountries_body > .text_right {
+  color: white;
+  padding: 14 5;
+  border-bottom-color:rgba(255.255.255.0.2) ;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-family: 'poppins';
+  font-size: 14px;
+  white-space:nowrap;
+  text-align: right;
+}
+
+#topcountries > tr{
+  background-image: -webkit-linear-gradient(90deg, #396afc 0%, #2948ff 100%);
+  
+}
+
+#time_and_message {
+  display:flex;
+  justify-content: space-between;
+}
+
+.time_and_message_bar {
+  border-radius: 10px;
+  flex: 1 1 50%;
+  background-color: white;
+
+  margin-bottom: 50;
+}
+
+.time_and_message_top {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(49, 89, 253, 0.9);
+  border-top-left-radius:10px ;
+  border-top-right-radius:10px ;
+  padding-left: 50px;
+  color: white;
+  font-family: 'poppins';
+  font-size: 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.messages_icon2{
+  font-size: 20px;
+  color:white;
+  margin-right: 10px;
+}
+
+.addbuttom {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #63c76a;
+  color:white;
+  position: absolute;
+  bottom:-15px;
+  right:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.time_and_message_second {
+  padding: 27 15 22 40;
+  border-bottom-color: rgb(242, 242, 242) ;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-size: 14px;
+  font-family: 'poppins';
+  display: flex;
+  align-items: center;
+  color: rgb(128, 128, 128);
+}
+
+.time_and_message_column {
+  padding:26 15 26 40;
+  box-sizing: border-box;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom-color: rgb(242, 242, 242) ;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+} 
+
+.right {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.redbd {
+  border-left: 3px solid #fa4251;
+}
+.yellowbd {
+  border-left: 3px solid #ffa037;
+}
+.bluebd {
+  border-left: 3px solid #4272d7;
+}
+.greenbd {
+  border-left: 3px solid #00ad5f;
+}
+.blackbd {
+  border-left: 3px solid #999;
+}
+
+
+.time_and_message_column_left_thing {
+  color: rgb(128, 128, 128);
+}
+.time_and_message_column_left_time {
+  color:#555;
+  font-weight: 600;
+  font-size: 14px;
+}
+.time_and_message_column_final {
+  padding:35 0 45 0 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load_more {
+  padding:10 40 10 40 ;
+  color: white;
+  background-color: rgb(128, 128, 128);
+  border-radius: 3px;
+  font-size: 15px;
+  border: 0px;
+}
+.picture {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  white-space:nowrap;
+}
+
+.time_and_message_column_right_name {
+  color: rgb(51,51,51);
+  font-weight: 600;
+  margin-bottom: 2px;
+  line-height:26px
+}
+
+.time_and_message_column_right_message {
+  line-height:26px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.messages_content {
+  color: rgb(51,51,51);
+}
+
+.messages_time {
+  color:rgb(128, 128, 128);
+}

@@ -20,15 +20,30 @@
           <img src = 'searchpart\search_icon.png' width="64" height="45">
         </div>
         <div id = 'searchpart__right'>
-          <div id = 'Messages'>
-            <i class="fas fa-comment-dots"></i>
-            <i class="fas fa-envelope"></i>
-            <i class="fas fa-bell"></i>
+          <div id = 'Messages'>  
+            <i class="fas fa-comment-dots messages_icon">
+              <p class = 'messages_number'>
+                1
+              </p>
+            </i>
+            <i class="fas fa-envelope messages_icon">
+              <p class = 'messages_number'>
+                0
+              </p>
+            </i>
+            <i class="fas fa-bell messages_icon">
+              <p class = 'messages_number'>
+                2
+              </p>
+            </i>
+          
           </div>
           <div id = 'john'>
             <p><img src = 'searchpart\men_icon.png' width='80%' height="60%"></p>
             <p class = 'john__doe'>John Doe</p>
-            <p><i class="fas fa-angle-down"></i><p>
+            <p>
+              <i class="fas fa-angle-down"></i>
+            <p>
           </div>
         </div>
       </div>
@@ -150,16 +165,259 @@
         <div id ='earningsbyitems_header'>
           <p>Earnings By items</p>
 
-          <p>Top Countries</p>
+          <p style = 'padding-right: 100px;'>Top Countries</p>
         </div>
-        <div id = 'earningsbyitems'>
-          <p><img style = 'width: 790px;height:500px'src='main\EarningsByItems.png'></p>
-          <p><img style = 'height: 500px;'src='main\TopCountries.png'></p>
-          
+        <div id = 'final_part'>
+          <div id = 'final_part_left'>
+            <table id = 'earningsbyitems'>
+              <tr class="earningsbyitems_title">
+                <td>Date</td>
+                <td>Order ID</td>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Total</td>
+              </tr>
+              <tr class="earningsbyitems_body">
+                <td>2018-09-29 05:57</td>
+                <td>100398</td>
+                <td>iPhone X 64Gb Grey</td>
+                <td>$999.00</td>
+                <td>1</td>
+                <td>$999.00</td>
+              </tr>
+              <tr class="earningsbyitems_body">
+                <td>2018-09-28 01:22</td>
+                <td>100397</td>
+                <td>Samsung S8 Black</td>
+                <td>$756.00</td>
+                <td>1</td>
+                <td>$756.00</td>
+              </tr>
+              <tr class="earningsbyitems_body">
+                <td>2018-09-27 02:12</td>
+                <td>100396</td>
+                <td>Game Console Controller</td>
+                <td>$22.00</td>
+                <td>2</td>
+                <td>$44.00</td>
+              </tr>
+              <tr class="earningsbyitems_body">
+                <td>2018-09-26 23:06</td>
+                <td>100395</td>
+                <td>iPhone X 256Gb Black</td>
+                <td>$1199.00</td>
+                <td>1</td>
+                <td>$1199.00</td>
+              </tr>
+              <tr class="earningsbyitems_body">
+                <td>2018-09-25 19:03</td>
+                <td>100393</td>
+                <td>USB 3.0 Cable</td>
+                <td>$10.00</td>
+                <td>3</td>
+                <td>$30.00</td>
+              </tr>
+              <tr class="earningsbyitems_body">
+                <td>2018-09-29 05:57</td>
+                <td>100392</td>
+                <td>Smartwatch 4.0 LTE Wifi</td>
+                <td>$199.00</td>
+                <td>6</td>
+                <td>$1494.00</td>
+              </tr>
+              <tr class="earningsbyitems_body">
+                <td>2018-09-24 19:10</td>
+                <td>100391</td>
+                <td>Camera C430W 4k</td>
+                <td>$699.00</td>
+                <td>1</td>
+                <td>$699.00</td>
+              </tr>
+              <tr class="earningsbyitems_body">
+                <td>2018-09-22 00:43</td>
+                <td>100393</td>
+                <td>USB 3.0 Cable</td>
+                <td>$10.00</td>
+                <td>3</td>
+                <td>$30.00</td>
+              </tr>
+            </table>
+          </div>
+          <div id = 'final_part_right'>
+            <div class = 'final_part_right_inside'>
+              <table id = 'topcountries'>
+                <tr class="topcountries_body">
+                  <td>United States</td>
+                  <td class = 'text_right'>$119,366.96</td>
+                </tr>
+                <tr class="topcountries_body">
+                  <td>Australia</td>
+                  <td class = 'text_right'>$70,261.65</td>
+                </tr>
+                <tr class="topcountries_body">
+                  <td>United Kingdom</td>
+                  <td class = 'text_right'>$46,399.22</td>
+                </tr>
+                <tr class="topcountries_body">
+                  <td>Turkey</td>
+                  <td class = 'text_right'>$35,364.90</td>
+                </tr>
+                <tr class="topcountries_body">
+                  <td>Germany</td>
+                  <td class = 'text_right'>$20,366.96</td>
+                </tr>
+                <tr class="topcountries_body">
+                  <td>France</td>
+                  <td class = 'text_right'>$10,366.96</td>
+                </tr>
+                <tr class="topcountries_body">
+                  <td>Australia</td>
+                  <td class = 'text_right'>$5,366.96</td>
+                </tr>
+                <tr class="topcountries_body">
+                  <td>Italy</td>
+                  <td class = 'text_right'>$1639.32</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
-        <div id = 'calendar'>
-          <p><img style = 'width: 530px;height: auto;'src='main\Task.png'></p>
-          <p><img style = 'width: 530px;height: auto;'src='main\NewMessages.png'></p>
+        <div id = 'time_and_message'>
+          <div class = 'time_and_message_bar'>
+            <div class = 'time_and_message_top'>
+              <i class="fas fa-calendar messages_icon2"></i>
+              26 April, 2018
+              <div class = 'addbuttom'>+</div>
+            </div>
+            <div class = 'time_and_message_second'>
+              Tasks for John Doe
+            </div>
+            <div class = 'time_and_message_column redbd'>
+              <div class = 'time_and_message_column_left_thing'>
+                Meeting about plan for Admin Template 2018
+              </div>
+              <div class = "time_and_message_column_left_time">
+                10:00 AM
+              </div>
+            </div>
+            <div class = 'time_and_message_column yellowbd'>
+              <div class = 'time_and_message_column_left_thing'>
+                Create new task for Dashboard
+              </div>
+              <div class = "time_and_message_column_left_time">
+                11:00 AM
+              </div>
+            </div>
+            <div class = 'time_and_message_column bluebd'>
+              <div class = 'time_and_message_column_left_thing'>
+                Meeting about plan for Admin Template 2018
+              </div>
+              <div class = "time_and_message_column_left_time">
+                02:00 PM
+              </div>
+            </div>
+            <div class = 'time_and_message_column greenbd'>
+              <div class = 'time_and_message_column_left_thing'>
+                Create new task for Dashboard
+              </div>
+              <div class = "time_and_message_column_left_time">
+                03:00 PM
+              </div>
+            </div>
+            <div class = "time_and_message_column_final">
+              <button class="load_more">
+                LOAD MORE
+              </button>
+            </div>
+          </div>
+          <div class = 'time_and_message_bar' style="margin-left: 30;">
+            <div class = 'time_and_message_top'>
+              <i class="fas fa-comment-alt messages_icon2"></i>
+              New Messages
+              <div class = 'addbuttom'>+</div>
+            </div>
+            <div class = "time_and_message_second">
+              You Have 2 new messages
+            </div>
+            <div class = 'time_and_message_column right blackbd'>
+              <div>
+                <img  class = 'picture' src = 'people/51671.jpg'>
+              </div>
+              <div class = 'content'>
+                <div class = 'time_and_message_column_right_name'>
+                  cyc_1025
+                </div>
+                <div class = 'time_and_message_column_right_message'>
+                  <div class = 'messages_content'>
+                    Have sent a photo
+                  </div>
+                  <div class = 'messages_time'>
+                    12 Min ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class = 'time_and_message_column right blackbd'>
+              <div>
+                <img  class = 'picture' src = 'people/51672.jpg'>
+              </div>
+              <div class = 'content'>
+                <div class = 'time_and_message_column_right_name'>
+                  chang_zai_wang
+                </div>
+                <div class = 'time_and_message_column_right_message'>
+                  <div class = 'messages_content'>
+                    You are now connected on message
+                  </div>
+                  <div class = 'messages_time'>
+                    11:00 PM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class = 'time_and_message_column right'>
+              <div>
+                <img  class = 'picture' src = 'people/51673.jpg'>
+              </div>
+              <div class = 'content'>
+                <div class = 'time_and_message_column_right_name'>
+                  little_milkwu
+                </div>
+                <div class = 'time_and_message_column_right_message'>
+                  <div class = 'messages_content'>
+                    Lorem ipsum dolor sit amet
+                  </div>
+                  <div class = 'messages_time'>
+                    Yesterday
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class = 'time_and_message_column right'>
+              <div>
+                <img  class = 'picture' src = 'people/51674.jpg'>
+              </div>
+              <div class = 'content'>
+                <div class = 'time_and_message_column_right_name'>
+                  michaelchen_0429
+                </div>
+                <div class = 'time_and_message_column_right_message'>
+                  <div class = 'messages_content'>
+                    Purus feugiat finibus
+                  </div>
+                  <div class = 'messages_time'>
+                    Sunday
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class = "time_and_message_column_final">
+              <button class="load_more">
+                LOAD MORE
+              </button>
+            </div> 
+          </div>
         </div>
       </div>
     </div>
